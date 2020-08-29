@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Delete Message" />
+
+    <TextView
+        android:id="@+id/t2"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Once you delete a message, there is no way to view or retrieve it." />
+
+    <TextView
+        android:id="@+id/t3"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="Are you sure you want to delete this message?"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/bt_no"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button"
+        android:text="No"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/bt_yes"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t3"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/bt_no"
+        android:background="@drawable/background_button"
+        android:text="Yes"
+        android:textColor="#FFF" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/t3"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/bt_yes"
+        android:visibility="gone" />
+</RelativeLayout>

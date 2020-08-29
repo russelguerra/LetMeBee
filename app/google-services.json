@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "331499069262",
+    "firebase_url": "https://letmebee-518e8.firebaseio.com",
+    "project_id": "letmebee-518e8",
+    "storage_bucket": "letmebee-518e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331499069262:android:34c74a9673de53e9",
+        "android_client_info": {
+          "package_name": "com.guerra.russel.letmebee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331499069262-fo7k7ucotfs2hkgfk3n3iqbhckfnls5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.guerra.russel.letmebee",
+            "certificate_hash": "0d7de7b31904266ffc03c985722f30453c678765"
+          }
+        },
+        {
+          "client_id": "331499069262-4eekju8sth454fgb3bpu77vdudqj11sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiUodNA2Y1EkkcFjCjDdnfhDHdmrsUwV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331499069262-4eekju8sth454fgb3bpu77vdudqj11sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

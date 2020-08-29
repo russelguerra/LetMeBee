@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.guerra.russel.letmebee">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomerActivities.CustomerActivity"/>
+        <activity
+            android:name=".AdminActivities.AdminActivity"/>
+        <activity
+            android:name=".CreateNewAccountActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".AdminActivities.ChatActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".AdminActivities.ProfileActivity" />
+        <activity android:name=".AdminActivities.PendingOrderActivity" />
+        <activity android:name=".AdminActivities.ApprovedOrderActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.guerra.russel.letmebee"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <activity android:name=".AdminActivities.DeliverOrderActivity" />
+        <activity android:name=".AdminActivities.HasDeliveredOrderActivity" />
+        <activity android:name=".CustomerActivities.CustomerPendingOrderActivity" />
+        <activity android:name=".CustomerActivities.CustomerDeliveredOrderActivity" />
+        <activity android:name=".CustomerActivities.CustomerDeclinedOrderActivity" />
+        <activity android:name=".CustomerActivities.CustomerProfileActivity" />
+        <activity android:name=".CustomerActivities.CustomerProfileUpdateActivity" />
+        <activity android:name=".AdminActivities.PendingOrder2Activity" />
+        <activity android:name=".AdminActivities.ApprovedOrder2Activity" />
+        <activity android:name=".CustomerActivities.CustomerApprovedActivity"></activity>
+    </application>
+
+</manifest>

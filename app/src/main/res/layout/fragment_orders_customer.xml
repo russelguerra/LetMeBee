@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="8dp"
+    tools:context=".CustomerFragment.OrdersCustomerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_pendingorder"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Orders:" />
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pendingorder">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pendingorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_approvedorder"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r2"
+            android:layout_marginTop="8dp"
+            android:text="Approved Orders:" />
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_approvedorder">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_approvedorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/t7"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r3"
+            android:layout_marginTop="8dp"
+            android:text="Most Recent Delivered Order:" />
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t7">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_deliveredorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_delivered"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button"
+            android:text="View all delivered orders"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/bt_declined"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_delivered"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_button"
+            android:text="View declined/canceled orders"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</ScrollView>

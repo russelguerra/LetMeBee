@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Order Information:" />
+
+    <TextView
+        android:id="@+id/t2"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="8dp"
+        android:text="ID:" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:paddingLeft="10dp"
+        android:text="ID:" />
+
+    <TextView
+        android:id="@+id/t7"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id"
+        android:layout_marginTop="8dp"
+        android:text="Date Ordered:" />
+
+    <TextView
+        android:id="@+id/tv_dateOrdered"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t7"
+        android:paddingLeft="10dp"
+        android:text="Date Ordered:" />
+
+    <TextView
+        android:id="@+id/t8"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dateOrdered"
+        android:layout_marginTop="8dp"
+        android:text="Date Approved:" />
+
+    <TextView
+        android:id="@+id/tv_dateApproved"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t8"
+        android:paddingLeft="10dp"
+        android:text="Date Approved:" />
+
+    <TextView
+        android:id="@+id/t3"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dateApproved"
+        android:layout_marginTop="8dp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t3"
+        android:paddingLeft="10dp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/t4"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="8dp"
+        android:text="Size:" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t4"
+        android:paddingLeft="10dp"
+        android:text="Size:" />
+
+    <TextView
+        android:id="@+id/t5"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_size"
+        android:layout_marginTop="8dp"
+        android:text="Quantity:" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t5"
+        android:paddingLeft="10dp"
+        android:text="Quantity:" />
+
+    <TextView
+        android:id="@+id/t6"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quantity"
+        android:layout_marginTop="8dp"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t6"
+        android:paddingLeft="10dp"
+        android:text="Price:" />
+</RelativeLayout>

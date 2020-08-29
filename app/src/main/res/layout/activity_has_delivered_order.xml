@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AdminActivities.PendingOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/t1"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: " />
+
+        <TextView
+            android:id="@+id/tv_id"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t8"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_id"
+            android:text="Date Delivered: " />
+
+        <TextView
+            android:id="@+id/tv_deliveredDate"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t8"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t7"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deliveredDate"
+            android:text="Date Approved: " />
+
+        <TextView
+            android:id="@+id/tv_approvedDate"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t7"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t6"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_approvedDate"
+            android:text="Date Ordered: " />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t6"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t2"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:text="Product name: " />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:text="Product Size: " />
+
+        <TextView
+            android:id="@+id/tv_size"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t3"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t4"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_size"
+            android:text="Quantity: " />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t4"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/t5"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quantity"
+            android:text="Total Price: " />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t5"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/bt_signature"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_button"
+            android:text="View Signature"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+</ScrollView>

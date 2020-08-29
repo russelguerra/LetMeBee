@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_product"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Sweet Honey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product"
+        android:text="Size: " />
+
+    <TextView
+        android:id="@+id/tv_stock"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_size"
+        android:text="Stock: " />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_stock"
+        android:text="Price: " />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/et_quantity"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/bt_order"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Enter amount" />
+
+    <EditText
+        android:id="@+id/et_quantity"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="130dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/t1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tv_totalprice"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_quantity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@id/pb"
+        android:text="Total Price: " />
+
+    <Button
+        android:id="@+id/bt_order"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_quantity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button"
+        android:text="Order"
+        android:textColor="#FFF" />
+</RelativeLayout>
